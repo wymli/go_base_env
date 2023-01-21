@@ -20,6 +20,7 @@ PS C:\WINDOWS\system32> dism.exe /online /enable-feature /featurename:Microsoft-
 [==========================100.0%==========================]
 操作成功完成。
 
+# 安装 wsl
 PS C:\WINDOWS\system32> wsl --install
 正在安装: 虚拟机平台
 已安装 虚拟机平台。
