@@ -33,7 +33,7 @@ PS C:\WINDOWS\system32> wsl --install
 
 
 # 设置 wsl 1
-wsl --set-default-version 1
+wsl --set-version Ubuntu-18.04 1
 
 ```
 
@@ -42,9 +42,11 @@ wsl --set-default-version 1
 ```
 
 # 安装 gvm
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+wget https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer
+bash gvm-installer
 
 # 先安装 gcc 环境，编译 go1.4
+sudo apt-get update
 sudo apt-get install curl git mercurial make binutils bison gcc build-essential
 
 # 先安装go1.4 binary, go1.4+ 需要 go 编译器
