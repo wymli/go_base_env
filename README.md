@@ -71,3 +71,9 @@ wget https://raw.githubusercontent.com/livebud/bud/main/install.sh
 bash install.sh
 安装错误多试几次。可能是网络问题
 ```
+
+# 建bud项目
+```
+gvm use go1.18
+bud create ${project}
+```
