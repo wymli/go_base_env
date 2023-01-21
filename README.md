@@ -30,6 +30,11 @@ PS C:\WINDOWS\system32> wsl --install
 已安装 Ubuntu。
 请求的操作成功。直到重新启动系统前更改将不会生效。
 
+
+
+# 设置 wsl 1
+wsl --set-default-version 1
+
 ```
 
 # go 环境
