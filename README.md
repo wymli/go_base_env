@@ -35,6 +35,11 @@ PS C:\WINDOWS\system32> wsl --install
 # 设置 wsl 1
 wsl --set-version Ubuntu-18.04 1
 
+# 设置dns
+
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
 ```
 
 # go 环境
@@ -58,4 +63,11 @@ export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.16
 gvm install go1.17
 gvm install go1.18
+```
+
+# 安装 bud
+```
+wget https://raw.githubusercontent.com/livebud/bud/main/install.sh
+bash install.sh
+安装错误多试几次。可能是网络问题
 ```
