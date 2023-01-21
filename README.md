@@ -65,6 +65,15 @@ gvm install go1.17
 gvm install go1.18
 ```
 
+# 安装 nvm/node
+```
+wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+bash install.sh
+bash
+nvm install node
+```
+
+
 # 安装 bud
 ```
 wget https://raw.githubusercontent.com/livebud/bud/main/install.sh
@@ -77,3 +86,5 @@ bash install.sh
 gvm use go1.18
 bud create ${project}
 ```
+
+
