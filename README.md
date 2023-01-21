@@ -70,7 +70,11 @@ gvm install go1.18
 wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 bash install.sh
 bash
-nvm install node
+nvm install 17
+nvm use 17
+node -v
+
+不建议装最新版，最新版会依赖比较高版本的glibc
 ```
 
 
