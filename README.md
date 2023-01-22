@@ -44,8 +44,12 @@ nameserver 8.8.4.4
 # 配置代理
 export https_proxy=http://127.0.0.1:10808 http_proxy=http://127.0.0.1:10808 all_proxy=socks5://127.0.0.1:10808
 
-vscode配置代理
+# vscode配置代理
 socks5://127.0.0.1:10808
+
+# 设置 git 代理
+git config --global http.proxy 'socks5://127.0.0.1:10808'
+git config --global https.proxy 'socks5://127.0.0.1:10808'
 ```
 
 # go 环境
@@ -74,9 +78,7 @@ gvm use go1.18 --default
 
 # 设置go代理
 go env -w GOPROXY=https://goproxy.io,direct
-# 设置 git 代理
-git config --global http.proxy 'socks5://127.0.0.1:10808'
-git config --global https.proxy 'socks5://127.0.0.1:10808'
+
 ```
 
 # 安装 nvm/node
