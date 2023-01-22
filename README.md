@@ -71,6 +71,12 @@ gvm install go1.17
 gvm install go1.18
 
 gvm use go1.18 --default
+
+# 设置go代理
+go env -w GOPROXY=https://goproxy.io,direct
+# 设置 git 代理
+git config --global http.proxy 'socks5://127.0.0.1:10808'
+git config --global https.proxy 'socks5://127.0.0.1:10808'
 ```
 
 # 安装 nvm/node
@@ -96,7 +102,8 @@ bash install.sh
 # 建bud项目
 ```
 gvm use go1.18
-bud create ${project}
+bud create ${project} --module github.com/wymli/forge_dashboard
+
 ```
 
 
