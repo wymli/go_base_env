@@ -40,6 +40,12 @@ wsl --set-version Ubuntu-18.04 1
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 
+
+# 配置代理
+export https_proxy=http://127.0.0.1:10808 http_proxy=http://127.0.0.1:10808 all_proxy=socks5://127.0.0.1:10808
+
+vscode配置代理
+socks5://127.0.0.1:10808
 ```
 
 # go 环境
