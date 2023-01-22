@@ -63,6 +63,8 @@ export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.16
 gvm install go1.17
 gvm install go1.18
+
+gvm use go1.18 --default
 ```
 
 # 安装 nvm/node
